@@ -36,10 +36,10 @@ html, body {
 /*[md-header] {
   @include primary-color;
 }*/
-sw-rebel-detail {
+sw-rebel-detail, sw-planet-detail {
   float: left;
   margin: 0.5em 0 0 2em;
-  width: 17em;
+  width: 19em;
 }
 /*.selected {
   @include selected-style;
