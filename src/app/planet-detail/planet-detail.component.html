@@ -1,0 +1,22 @@
+<div class="planet-detail">
+  <h2 md-header>Planet Details</h2>
+  <div class="planet-icon"><i></i></div>
+  <div *ngIf="planet;else noPlanet">
+      <p>
+        <span>The following planet is selected</span>
+        <b>{{planet.name}}</b>
+      </p>
+      <p>
+      
+      <p>
+        <md-checkbox [(ngModel)]="revealModel">Reveal Model</md-checkbox>
+      </p>
+      <pre *ngIf="revealModel">{{planet | json}}</pre>
+
+  </div>
+
+  <ng-template #noPlanet>
+    <div>No Planet has been selected</div>
+  </ng-template>
+  
+</div>

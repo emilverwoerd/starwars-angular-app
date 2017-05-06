@@ -1,16 +1,20 @@
+import { FormsModule } from '@angular/forms';
+import { PlanetDetailComponent } from '../planet-detail/planet-detail.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PlanetsRoutingModule } from './planets-routing.module';
 import { PlanetsComponent } from './planets.component';
-import { MdListModule } from '@angular/material';
+import { MdListModule, MdCheckboxModule } from '@angular/material';
 
 @NgModule({
   imports: [
+    FormsModule,
     CommonModule,
     PlanetsRoutingModule,
-    MdListModule
+    MdListModule,
+    MdCheckboxModule,
   ],
-  declarations: [PlanetsComponent]
+  declarations: [PlanetsComponent, PlanetDetailComponent]
 })
 export class PlanetsModule { }
